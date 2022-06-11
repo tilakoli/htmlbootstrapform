@@ -20,94 +20,428 @@
       integrity="sha384-6pzBo3FDv/PJ8r2KRkGHifhEocL+1X2rVCTTkUfGk7/0pbek5mMa1upzvWbrUbOZ"
       crossorigin="anonymous"
     />
+    <style>
+      body{
+        overflow-x: hidden;
+      }
+    </style>
   </head>
   <body>
-    something
-    <div class="bg-dark">
-      <nav class="navbar navbar-default">
-        <div class="container-fluid">
-          <!-- Brand and toggle get grouped for better mobile display -->
-          <div class="navbar-header">
-            <button
-              type="button"
-              class="navbar-toggle collapsed"
-              data-toggle="collapse"
-              data-target="#bs-example-navbar-collapse-1"
-              aria-expanded="false"
-            >
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="#">Brand</a>
+    <div class="main" style="width: 100vw; height: auto; background: white">
+      <!-- ---------- CONTENT BODY ------------  -->
+      <div
+        class="contents"
+        style="
+          width: 90%;
+          height: auto;
+          margin: auto;
+          background: #edeff2;
+          padding-left: 30px;
+          padding-right: 30px;
+          padding-bottom: 30px;
+        "
+      >
+
+        <!-- --------------------- HEADER ---------------  -->
+        <div style="margin-bottom: 30px; display: flex; flex-direction: column; align-items: center; justify-content: center;">
+
+          <div class="image">
+            <img src="./image 1.png" alt="image" />
           </div>
 
-          <!-- Collect the nav links, forms, and other content for toggling -->
-          <div
-            class="collapse navbar-collapse"
-            id="bs-example-navbar-collapse-1"
-          >
-            <ul class="nav navbar-nav">
-              <li class="active">
-                <a href="#">Link <span class="sr-only">(current)</span></a>
-              </li>
-              <li><a href="#">Link</a></li>
-              <li class="dropdown">
-                <a
-                  href="#"
-                  class="dropdown-toggle"
-                  data-toggle="dropdown"
-                  role="button"
-                  aria-haspopup="true"
-                  aria-expanded="false"
-                  >Dropdown <span class="caret"></span
-                ></a>
-                <ul class="dropdown-menu">
-                  <li><a href="#">Action</a></li>
-                  <li><a href="#">Another action</a></li>
-                  <li><a href="#">Something else here</a></li>
-                  <li role="separator" class="divider"></li>
-                  <li><a href="#">Separated link</a></li>
-                  <li role="separator" class="divider"></li>
-                  <li><a href="#">One more separated link</a></li>
-                </ul>
-              </li>
-            </ul>
-            <form class="navbar-form navbar-left">
-              <div class="form-group">
-                <input type="text" class="form-control" placeholder="Search" />
-              </div>
-              <button type="submit" class="btn btn-default">Submit</button>
-            </form>
-            <ul class="nav navbar-nav navbar-right">
-              <li><a href="#">Link</a></li>
-              <li class="dropdown">
-                <a
-                  href="#"
-                  class="dropdown-toggle"
-                  data-toggle="dropdown"
-                  role="button"
-                  aria-haspopup="true"
-                  aria-expanded="false"
-                  >Dropdown <span class="caret"></span
-                ></a>
-                <ul class="dropdown-menu">
-                  <li><a href="#">Action</a></li>
-                  <li><a href="#">Another action</a></li>
-                  <li><a href="#">Something else here</a></li>
-                  <li role="separator" class="divider"></li>
-                  <li><a href="#">Separated link</a></li>
-                </ul>
-              </li>
-            </ul>
+          <div class="headings" style="display: flex; align-items: center; flex-direction: column;">
+          <strong> <h2>Town Development Fund, Nepal</h2> </strong> 
+          <strong>  <p>Phulchoki Mai Marg, Kathmandu 44605 </p> </strong> 
+            <strong>  <p>tdf@tdf.org.np</p> </strong> 
           </div>
-          <!-- /.navbar-collapse -->
         </div>
-        <!-- /.container-fluid -->
-      </nav>
-    </div>
+        <!-- ------------------- HEADER FINISHED---------  -->
 
+        <!-- ------------- Physical Progress -------------  -->
+         <div>
+          <strong>Physical Progress</strong>
+          <br />
+          <br />
+          <div>
+            <!-- -----------  -->
+            <div className="row">
+              <div class="form-group col-md-6">
+                <label for="usr">Name of Visitor/s: *</label>
+                <input type="text" class="form-control input-lg" required />
+              </div>
+              <div class="form-group col-md-6">
+                <label for="pwd">Other Visitors (if any):: *</label>
+                <input type="password" class="form-control input-lg" required />
+              </div>
+            </div>
+            <div style="width: 100%; display: flex; justify-content: flex-end">
+              <button type="button" class="btn btn-primary">
+                Add New Visitor
+              </button>
+            </div>
+          </div>
+         </div>
+        <!-- ------------- Physical Progress FINISHED -------------  -->
+
+        <!-- ------------------Name of Town Visited:------- -->
+        <div>
+        <h4>  <strong>Name of Town Visited:</strong> </h4>
+
+
+          <div class="row "  style="margin: auto; display: flex;  ">
+            <div class="dropdown " style="width: 33%;" >
+              <button
+                style="background-color: white; text-align: left; width: 98%;"
+                class="btn dropdown-toggle btn-lg text-align-left col-md-4
+                type="button"
+                data-toggle="dropdown"
+              >
+                Province &nbsp; &nbsp; <span class="caret"></span>
+              </button>
+              <ul class="dropdown-menu">
+                <li><a href="#">HTML</a></li>
+                <li><a href="#">CSS</a></li>
+                <li><a href="#">JavaScript</a></li>
+              </ul>
+            </div>
+            
+            <div class="dropdown " style="width: 33%;" >
+              <button
+                style="background-color: white;    text-align: left; width: 98%;"
+                class="btn dropdown-toggle text-align-left btn-lg col-md-4
+                type="button"
+                data-toggle="dropdown"
+              >
+                District &nbsp; &nbsp; <span class="caret"></span>
+
+              </button>
+              <ul class="dropdown-menu">
+                <li><a href="#">HTML</a></li>
+                <li><a href="#">CSS</a></li>
+                <li><a href="#">JavaScript</a></li>
+              </ul>
+              
+          </div>
+
+
+          <div class="dropdown " style="width: 33%;" >
+            <button
+              style="background-color: white;  text-align: left; width: 98%;"
+              class="btn dropdown-toggle text-align-left btn-lg col-md-4
+              type="button"
+              data-toggle="dropdown"
+            >
+              LG &nbsp; &nbsp; <span class="caret"></span>
+
+            </button>
+            <ul class="dropdown-menu">
+              <li><a href="#">HTML</a></li>
+              <li><a href="#">CSS</a></li>
+              <li><a href="#">JavaScript</a></li>
+            </ul>
+            
+        </div>
+
+           <div class="dropdown " style="width: 33%;" >
+            <button
+              style="background-color: white;  text-align: left; width: 98%;"
+              class="btn dropdown-toggle text-align-left btn-lg col-md-4
+              type="button"
+              data-toggle="dropdown"
+            >
+              Town Name &nbsp; &nbsp; <span class="caret"></span>
+
+            </button>
+            <ul class="dropdown-menu">
+              <li><a href="#">HTML</a></li>
+              <li><a href="#">CSS</a></li>
+              <li><a href="#">JavaScript</a></li>
+            </ul>
+            
+        </div>
+
+
+        </div>
+
+        <!-- ---------------  -->
+        <div class="row"  style=" display: flex; margin-top: 30px; ">
+            <div class="form-group col-md-4">
+              <input type="text" placeholder="longitude" class="form-control input-lg" required />
+            </div>
+            <div class="form-group col-md-4">
+              <input type="text" placeholder="latitude" class="form-control input-lg" required />
+            </div>
+       
+        </div>
+
+
+        </div>
+        <!-- -------Name of Town Visited:-------- -->
+
+        
+        <!-- ---------------------PROGRAMS-------------  -->
+        <div style=" margin-top: 30px;">
+            <h4>  <strong>Program</strong></h4>
+              
+            <!-- --------------- project Name, DATES ROW -------------  -->
+            <div class="row"  style=" display: flex;"">
+                  <div class="form-group col-md-4">
+                    <label for="usr">Project Name: *</label>
+                    <input type="text" placeholder="Name" class="form-control input-lg" required />
+                  </div>
+
+
+                  <div  class="md-form md-outline input-with-post-icon datepicker col-md-4" inline="true">
+                    <label for="usr">Date of Visit to Town/Municipality | From
+                      : </label>
+                    <input placeholder="Select date" type="date" id="example" class="form-control input-lg">
+                    <i class="fas fa-calendar input-prefix"></i>
+                  </div>
+
+
+
+                  <div  class="md-form md-outline input-with-post-icon datepicker col-md-4" inline="true">
+                    <label for="usr">Date of Visit to Town/Municipality | To
+                      : </label>
+                    <input placeholder="Select date" type="date" id="example" class="form-control input-lg">
+                    <i class="fas fa-calendar input-prefix"></i>
+                  </div>
+            </div>
+            <!-- --------------- project Name, DATES ROW end -------------  -->
+
+
+            <!-- --------------- COMMENT SECTION  -------------  -->
+            <div class="row" style="display: flex;">
+              <div class="form-group col-md-12">
+                <label for="comment">Project Status before Visit:</label>
+                <textarea class="form-control col-md-12" placeholder="Initial Status" rows="5" id="comment"></textarea>
+              </div>
+            </div>
+            <!-- --------------- COMMENT SECTION END -------------  -->
+
+            <!-- ---------------- THREE INPUT FIELD ROW -------------  -->
+            <div class="row"  style="display: flex; margin-top: 30px;">
+                <div class="form-group col-md-4">
+                  <label for="usr">Person/Authority Met | Position :</label>
+                  <input type="text" placeholder="Full Name" class="form-control input-lg" required />
+                </div>
+                <div class="form-group col-md-4">
+                  <label for="pwd">Email address  *</label>
+                  <input type="text" placeholder="Email" class="form-control input-lg" required />
+                </div>
+                <div class="form-group col-md-4">
+                  <label for="pwd">Contact no  *</label>
+                  <input type="text" placeholder="Phone No." class="form-control input-lg" required />
+                </div>
+            </div>
+            <!-- ---------------- THREE INPUT FIELD ROW FINISHED-------------  -->
+
+
+            <!-- --------------------- Appendable Fields -----------------------  -->
+           
+            <!-- ------field One-------  -->
+            <div class="row" style="display: flex; margin-top: 30px;">
+              <div class="col-md-12">
+                <label for="usr">Activities Performed:</label>
+                <div class="form-group col-md-12"  style="display: flex;">
+                  <input type="text" placeholder="Activities" class="form-control input-lg" required />
+                  <button class="btn">  
+                    <span>
+                      <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M21.875 10.1562H14.8438V3.125C14.8438 2.26221 14.144 1.5625 13.2812 1.5625H11.7188C10.856 1.5625 10.1562 2.26221 10.1562 3.125V10.1562H3.125C2.26221 10.1562 1.5625 10.856 1.5625 11.7188V13.2812C1.5625 14.144 2.26221 14.8438 3.125 14.8438H10.1562V21.875C10.1562 22.7378 10.856 23.4375 11.7188 23.4375H13.2812C14.144 23.4375 14.8438 22.7378 14.8438 21.875V14.8438H21.875C22.7378 14.8438 23.4375 14.144 23.4375 13.2812V11.7188C23.4375 10.856 22.7378 10.1562 21.875 10.1562Z" fill="#0077B6"/>
+                    </svg>
+                    </span>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- ------field two-------  -->
+            <div class="row" style="display: flex; margin-top: 30px;">
+              <div class="col-md-12">
+                <label for="Purpose/Objective of Visit:">Purpose/Objective of Visit:</label>
+                <div class="form-group col-md-12"  style="display: flex;">
+                  <input type="text" placeholder="Objective of Visit" class="form-control input-lg" required />
+                  <button class="btn">  
+                    <span>
+                      <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M21.875 10.1562H14.8438V3.125C14.8438 2.26221 14.144 1.5625 13.2812 1.5625H11.7188C10.856 1.5625 10.1562 2.26221 10.1562 3.125V10.1562H3.125C2.26221 10.1562 1.5625 10.856 1.5625 11.7188V13.2812C1.5625 14.144 2.26221 14.8438 3.125 14.8438H10.1562V21.875C10.1562 22.7378 10.856 23.4375 11.7188 23.4375H13.2812C14.144 23.4375 14.8438 22.7378 14.8438 21.875V14.8438H21.875C22.7378 14.8438 23.4375 14.144 23.4375 13.2812V11.7188C23.4375 10.856 22.7378 10.1562 21.875 10.1562Z" fill="#0077B6"/>
+                    </svg>
+                    </span>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+
+            <!-- ------field three-------  -->
+            <div class="row" style="display: flex; margin-top: 30px;">
+            <div class="col-md-12">
+              <label for="Purpose/Objective of Visit:">General Observations/Findings:</label>
+              <div class="form-group col-md-12"  style="display: flex;">
+                <input type="text" placeholder=" Observations" class="form-control input-lg" required />
+                <button class="btn">  
+                  <span>
+                    <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21.875 10.1562H14.8438V3.125C14.8438 2.26221 14.144 1.5625 13.2812 1.5625H11.7188C10.856 1.5625 10.1562 2.26221 10.1562 3.125V10.1562H3.125C2.26221 10.1562 1.5625 10.856 1.5625 11.7188V13.2812C1.5625 14.144 2.26221 14.8438 3.125 14.8438H10.1562V21.875C10.1562 22.7378 10.856 23.4375 11.7188 23.4375H13.2812C14.144 23.4375 14.8438 22.7378 14.8438 21.875V14.8438H21.875C22.7378 14.8438 23.4375 14.144 23.4375 13.2812V11.7188C23.4375 10.856 22.7378 10.1562 21.875 10.1562Z" fill="#0077B6"/>
+                  </svg>
+                  </span>
+                </button>
+              </div>
+            </div>
+            </div>
+
+              <!-- ------field four-------  -->
+            <div class="row" style="display: flex; margin-top: 30px;">
+              <div class="col-md-12">
+                <label for="Purpose/Objective of Visit:">General Observations/Findings:</label>
+                <div class="form-group col-md-12"  style="display: flex;">
+                  <input type="text" placeholder=" Observations" class="form-control input-lg" required />
+                  <button class="btn">  
+                    <span>
+                      <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M21.875 10.1562H14.8438V3.125C14.8438 2.26221 14.144 1.5625 13.2812 1.5625H11.7188C10.856 1.5625 10.1562 2.26221 10.1562 3.125V10.1562H3.125C2.26221 10.1562 1.5625 10.856 1.5625 11.7188V13.2812C1.5625 14.144 2.26221 14.8438 3.125 14.8438H10.1562V21.875C10.1562 22.7378 10.856 23.4375 11.7188 23.4375H13.2812C14.144 23.4375 14.8438 22.7378 14.8438 21.875V14.8438H21.875C22.7378 14.8438 23.4375 14.144 23.4375 13.2812V11.7188C23.4375 10.856 22.7378 10.1562 21.875 10.1562Z" fill="#0077B6"/>
+                    </svg>
+                    </span>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+
+              <!-- ------field five-------  -->
+              <div class="row" style="display: flex; margin-top: 30px;">
+                <div class="col-md-12">
+                  <label for="Purpose/Objective of Visit:">Recommendations:</label>
+                  <div class="form-group col-md-12"  style="display: flex;">
+                    <input type="text" placeholder="Recommendations " class="form-control input-lg" required />
+                    <button class="btn">  
+                      <span>
+                        <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M21.875 10.1562H14.8438V3.125C14.8438 2.26221 14.144 1.5625 13.2812 1.5625H11.7188C10.856 1.5625 10.1562 2.26221 10.1562 3.125V10.1562H3.125C2.26221 10.1562 1.5625 10.856 1.5625 11.7188V13.2812C1.5625 14.144 2.26221 14.8438 3.125 14.8438H10.1562V21.875C10.1562 22.7378 10.856 23.4375 11.7188 23.4375H13.2812C14.144 23.4375 14.8438 22.7378 14.8438 21.875V14.8438H21.875C22.7378 14.8438 23.4375 14.144 23.4375 13.2812V11.7188C23.4375 10.856 22.7378 10.1562 21.875 10.1562Z" fill="#0077B6"/>
+                      </svg>
+                      </span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+
+               <!-- ------field six LAST APPENDABLE FIELDS ROW-------  -->
+               <div class="row" style="display: flex; margin-top: 30px;">
+                <div class="col-md-6">
+                  <label for="Purpose/Objective of Visit:">Recommendations:</label>
+                  <div class="form-group"  style="display: flex;">
+                    <input type="text" placeholder="Recommendations " class="form-control input-lg" required />
+                    <button class="btn">  
+                      <span>
+                        <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M21.875 10.1562H14.8438V3.125C14.8438 2.26221 14.144 1.5625 13.2812 1.5625H11.7188C10.856 1.5625 10.1562 2.26221 10.1562 3.125V10.1562H3.125C2.26221 10.1562 1.5625 10.856 1.5625 11.7188V13.2812C1.5625 14.144 2.26221 14.8438 3.125 14.8438H10.1562V21.875C10.1562 22.7378 10.856 23.4375 11.7188 23.4375H13.2812C14.144 23.4375 14.8438 22.7378 14.8438 21.875V14.8438H21.875C22.7378 14.8438 23.4375 14.144 23.4375 13.2812V11.7188C23.4375 10.856 22.7378 10.1562 21.875 10.1562Z" fill="#0077B6"/>
+                      </svg>
+                      </span>
+                    </button>
+                  </div>
+                </div>
+
+                <div class="form-group col-md-4">
+                  <label for="usr">Progress in percentage</label>
+                  <input type="text" placeholder="Progress %" class="form-control input-lg" required />
+                </div>
+
+              </div>
+            <!-- --------------------- Appendable Fields Finished-----------------------  -->
+                
+
+            <!-- ------------------- DOCUMENTS UPLOAD --------------  -->
+            <div style=" margin-top: 30px;">
+            <h4><strong>Documents Upload</strong></h4>
+        
+                <div class="row"  style=" display: flex; margin: auto;">
+                    <div class="form-group col-md-3">
+                      <div class="input-group-prepend">
+                      <strong> <span class="input-group-text">कार्यक्रमको अनुगमन तथा मूल्याङ्कन</span></strong>
+                      </div>
+                      <div class="custom-file" style="border: 2px solid black; padding:20px; background-color: #fff; border-radius:10px;">
+                        <input type="file" class="custom-file-input" id="inputGroupFile01"
+                          aria-describedby="inputGroupFileAddon01">
+                          <br>
+                        <label class="custom-file-label" for="inputGroupFile01">PNG, JPG, PDF up to 2MB</label>
+                      </div>
+                    </div>
+
+                    <div class="form-group col-md-3">
+                        <div class="input-group-prepend">
+                        <strong> <span class="input-group-text">कार्यपालिका बैठकको निर्णय र मिति</s></strong>
+                        </div>
+                        <div class="custom-file" style="border: 2px solid black; padding:20px; background-color: #fff; border-radius:10px;">
+                          <input type="file" class="custom-file-input" id="inputGroupFile01"
+                            aria-describedby="inputGroupFileAddon01">
+                            <br>
+                          <label class="custom-file-label" for="inputGroupFile01">PNG, JPG, PDF up to 2MB</label>
+                        </div>
+                    </div>
+
+                    <div class="form-group col-md-3">
+                      <div class="input-group-prepend">
+                      <strong> <span class="input-group-text">कार्यक्रमको अनुगमन तथा मूल्याङ्कन</span></strong>
+                      </div>
+                      <div class="custom-file" style="border: 2px solid black; padding:20px; background-color: #fff; border-radius:10px;">
+                        <input type="file" class="custom-file-input" id="inputGroupFile01"
+                          aria-describedby="inputGroupFileAddon01">
+                          <br>
+                        <label class="custom-file-label" for="inputGroupFile01">PNG, JPG, PDF up to 2MB</label>
+                      </div>
+                    </div>
+
+                    <div class="form-group col-md-3">
+                      <div class="input-group-prepend">
+                      <strong> <span class="input-group-text">कार्यक्रमको अनुगमन तथा मूल्याङ्कन</span></strong>
+                      </div>
+                      <div class="custom-file" style="border: 2px solid black; padding:20px; background-color: #fff; border-radius:10px;">
+                        <input type="file" class="custom-file-input" id="inputGroupFile01"
+                          aria-describedby="inputGroupFileAddon01">
+                          <br>
+                        <label class="custom-file-label" for="inputGroupFile01">PNG, JPG, PDF up to 2MB</label>
+                      </div>
+                    </div>
+
+                </div>
+
+            </div>
+           
+            <div style="width: 100%; display: flex; justify-content: flex-end; margin-bottom: 20px;">
+              <button type="button" class="btn btn-primary">
+                Add new document
+              </button>
+            </div>
+
+            <!-- --------DOCUMENTS UPLOAD FINISHED-------  -->
+
+
+            <!-- ----------- SUBMIT BUTTONS -------------  -->
+            <div style="width: 100%; display: flex; justify-content: flex-end">
+              <button type="button" class="btn btn-primary">
+                Save
+              </button>
+              &nbsp;&nbsp;
+              <button type="button" class="btn btn-primary">
+                Save and submit
+              </button>
+            </div>
+          
+            <!-- ----------- SUBMIT BUTTONS FINISHED -------------  -->
+            
+        </div>
+      </div>
+
+      <!-- ------------ COPYRIGHT FOOTER ----------  -->
+      <div class="footer col-md-12" style="height:10vh; display: flex;justify-content: center; align-items: center;">
+        <div class="card-footer text-muted">
+          © 2022 All rights reserved. Town Development Fund (TDF) Email : info@tdf.org.np
+        </div>
+      </div>
+
+    </div>
     <script
       src="https://code.jquery.com/jquery-1.12.4.min.js"
       integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ"
