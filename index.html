@@ -20,427 +20,351 @@
       integrity="sha384-6pzBo3FDv/PJ8r2KRkGHifhEocL+1X2rVCTTkUfGk7/0pbek5mMa1upzvWbrUbOZ"
       crossorigin="anonymous"
     />
-    <style>
-      body{
-        overflow-x: hidden;
-      }
-    </style>
   </head>
+  <style>
+    td{
+      background-color: #fff;
+    }
+  </style>
   <body>
-    <div class="main" style="width: 100vw; height: auto; background: white">
-      <!-- ---------- CONTENT BODY ------------  -->
-      <div
-        class="contents"
-        style="
-          width: 90%;
-          height: auto;
-          margin: auto;
-          background: #edeff2;
-          padding-left: 30px;
-          padding-right: 30px;
-          padding-bottom: 30px;
-        "
-      >
-
-        <!-- --------------------- HEADER ---------------  -->
-        <div style="margin-bottom: 30px; display: flex; flex-direction: column; align-items: center; justify-content: center;">
-
-          <div class="image">
-            <img src="./image 1.png" alt="image" />
-          </div>
-
-          <div class="headings" style="display: flex; align-items: center; flex-direction: column;">
-          <strong> <h2>Town Development Fund, Nepal</h2> </strong> 
-          <strong>  <p>Phulchoki Mai Marg, Kathmandu 44605 </p> </strong> 
-            <strong>  <p>tdf@tdf.org.np</p> </strong> 
-          </div>
+    <br/>
+    <div  style="background: #EDEFF2; padding-bottom: 30px; width: fit-content; margin: auto;">
+      <br />
+      <br />
+      <!-- ----------- TOP BAR FILTER'S --------------  -->
+      <div class="topbar" style="background: #EDEFF2;display: flex; align-items: center; justify-content: space-evenly">
+        <!-- ----------- search Bar ---------- -->
+      <div class="input-group" style="  display: flex; gap: 5px">
+        <div class="form-outline">
+          <input
+            type="search"
+            placeholder="Search..."
+            id="form1"
+            class="form-control input-lg"
+          />
         </div>
-        <!-- ------------------- HEADER FINISHED---------  -->
+        <button type="button" class="btn btn-lg" style="background-color: #053775; color:#fff;">
+          <i class="fas fa-search">Search</i>
+        </button>
+      </div>
 
-        <!-- ------------- Physical Progress -------------  -->
-         <div>
-          <strong>Physical Progress</strong>
-          <br />
-          <br />
-          <div>
-            <!-- -----------  -->
-            <div className="row">
-              <div class="form-group col-md-6">
-                <label for="usr">Name of Visitor/s: *</label>
-                <input type="text" class="form-control input-lg" required />
-              </div>
-              <div class="form-group col-md-6">
-                <label for="pwd">Other Visitors (if any):: *</label>
-                <input type="password" class="form-control input-lg" required />
-              </div>
-            </div>
-            <div style="width: 100%; display: flex; justify-content: flex-end">
-              <button type="button" class="btn btn-primary">
-                Add New Visitor
-              </button>
-            </div>
-          </div>
-         </div>
-        <!-- ------------- Physical Progress FINISHED -------------  -->
+      <!-- ---------Filters-- ---------- -->
+        <div class="dropdown " style=" background: #053775;  border-radius: 8px; color: #fff;" >
+          <button
+            style="background-color: transparent; text-align: left; width: 98%; color: #fff;"
+            class="btn dropdown-toggle btn-lg text-align-left col-md-4
+            type="button"
+            data-toggle="dropdown"
+          >
+            Filters &nbsp; &nbsp; <span class="caret"></span>
+          </button>
+          <ul class="dropdown-menu">
+            <li><a href="#">By ... </a></li>
+            <li><a href="#">By ...</a></li>
+            <li><a href="#">By ...</a></li>
+          </ul>
+        </div>
 
-        <!-- ------------------Name of Town Visited:------- -->
-        <div>
-        <h4>  <strong>Name of Town Visited:</strong> </h4>
+      <!-- ----------- Program DropDown---------- -->
+      <div class="dropdown " style=" background: #053775; border-radius: 8px; color: #fff;" >
+        <button
+          style="background-color: transparent;  text-align: left; color: #fff; width: 98%;"
+          class="btn dropdown-toggle btn-lg text-align-left col-md-4
+          type="button"
+          data-toggle="dropdown"
+        >
+          Programs &nbsp; &nbsp; <span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu">
+          <li><a href="#">Program 1</a></li>
+          <li><a href="#">Program 2</a></li>
+          <li><a href="#">Program 3</a></li>
+        </ul>
+      </div>
+
+      <!-- ----------- Province ---------- -->
+      <div class="dropdown " style=" background: #053775; border-radius: 8px; color: #fff;" >
+        <button
+          style="background-color: transparent;  text-align: left; width: 98%; color: #fff;"
+          class="btn dropdown-toggle btn-lg text-align-left col-md-4
+          type="button"
+          data-toggle="dropdown"
+        >
+          Province &nbsp; &nbsp; <span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu">
+          <li><a href="#">Province 1</a></li>
+          <li><a href="#">Province 2</a></li>
+          <li><a href="#">Bagmati Province</a></li>
+        </ul>
+      </div>
+
+      <!-- ----------- FISCAL YEAR---------- -->
+      <div class="dropdown " style=" background: #053775; border-radius: 8px; color: #fff;" >
+        <button
+          style="background-color: transparent;  text-align: left; width: 98%; color: #fff;"
+          class="btn dropdown-toggle btn-lg text-align-left col-md-4
+          type="button"
+          data-toggle="dropdown"
+        >
+          Fiscal Year &nbsp; &nbsp; <span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu">
+          <li><a href="#">2078</a></li>
+          <li><a href="#">2077</a></li>
+          <li><a href="#">2076</a></li>
+        </ul>
+      </div>
+
+      </div>
+      <!-- ----------- TOP BAR FINISHED--------------  -->
+
+      <br/>
+      <br/>
+      <!-- --------------------- TABLE ------------------->
+      <table border="1"  class="table" style="text-align: center; width: 95%; margin:auto">
+
+        <!-- --------------- TABLE HEADINGS --------------->
+        <tr style=" border-color: #fff; background-color: #053775; color: #fff;">
+          <th rowspan="3">SN</th>
+          <th rowspan="3">Project Name</th>
+          <th colspan="4">Project status as of the end of FY 2077/78</th>
+          <th colspan="3"rowspan="3">Approved Budget FY 2078/79</th>
+          <th rowspan="3">Main Activities (Total: target of this year)</th>
+          <th rowspan="3">Milestones</th>
+          <th colspan="14">Timeline</th>
+          <th rowspan="3">Performance Indicators</th>
+          <th colspan="4">Responsibility</th>
+          <th rowspan="4">Remarks</th>
+        </tr>
+
+        <tr style=" border-color: #fff; background-color: #053775; color: #fff;">
+          <th colspan="2" rowspan="2">Physical</th>
+          <th colspan="2" rowspan="2">Financial</th>
+          <th colspan="3">1st Quarter</th>
+          <th colspan="3">2nd Quarter</th>
+          <th colspan="3">3rd Quarter</th>
+          <th colspan="3">4th Quarter</th>
+          <th colspan ='2'>Total </th>
+          <th colspan="2" rowspan="2">Main Responsibility</th>
+          <th colspan="2" rowspan="2">Supportive Responsibility</th>
+        </tr>
+
+        <tr style=" border-color: #fff; background-color: #053775; color: #fff;">
+          <th>1</th>
+          <th>2</th>
+          <th>3</th>
+          <th>1</th>
+          <th>2</th>
+          <th>3</th>
+          <th>1</th>
+          <th>2</th>
+          <th>3</th>
+          <th>1</th>
+          <th>2</th>
+          <th>3</th>
+          <th>FT</th>
+          <th>FP</th>
+        </tr>
+        <!-- --------------- TABLE HEADINGS FINISHED--------------->
 
 
-          <div class="row "  style="margin: auto; display: flex;  ">
-            <div class="dropdown " style="width: 33%;" >
-              <button
-                style="background-color: white; text-align: left; width: 98%;"
-                class="btn dropdown-toggle btn-lg text-align-left col-md-4
-                type="button"
-                data-toggle="dropdown"
-              >
-                Province &nbsp; &nbsp; <span class="caret"></span>
-              </button>
-              <ul class="dropdown-menu">
-                <li><a href="#">HTML</a></li>
-                <li><a href="#">CSS</a></li>
-                <li><a href="#">JavaScript</a></li>
-              </ul>
-            </div>
+        <!-- ---------------------------- TABLE BODY -----------------  -->
+          <tbody style="border-color: #053775;">
+            <tr>
+              <td>1</td>
+              <td>Commercial Complex and Local Product Center</td>
+              <td colspan="2">67%</td>
+              <td  colspan="2">87%</td>
+              <td  colspan="3">290000000</td>
+              <td>Request for 1st Installment received and account opened</td>
+              <td>Comments on Feasibility Report send to Client</td>
+              <!-- -------- Timeline --------->
+              <td> </td>
+              <td> </td>
+              <td> </td>
+              <td> </td>
+              <td> </td>
+              <td> </td>
+              <td> </td>
+              <td> </td>
+              <td> </td>
+              <td> </td>
+              <td> </td>
+              <td> </td>
+              <td> </td>
+              <td> </td>
+              <!-- ------- Timeline End ----------->
+              <td>Other financial, economic, and social benefits of projects:</td>
+              <td  colspan="2">Mr. Lorem</td>
+              <td  colspan="2">Mr. Ipsum</td>
+              <td>Other financial, economic, and social benefits of projects:</td>
+            </tr>
             
-            <div class="dropdown " style="width: 33%;" >
-              <button
-                style="background-color: white;    text-align: left; width: 98%;"
-                class="btn dropdown-toggle text-align-left btn-lg col-md-4
-                type="button"
-                data-toggle="dropdown"
-              >
-                District &nbsp; &nbsp; <span class="caret"></span>
 
-              </button>
-              <ul class="dropdown-menu">
-                <li><a href="#">HTML</a></li>
-                <li><a href="#">CSS</a></li>
-                <li><a href="#">JavaScript</a></li>
-              </ul>
-              
-          </div>
-
-
-          <div class="dropdown " style="width: 33%;" >
-            <button
-              style="background-color: white;  text-align: left; width: 98%;"
-              class="btn dropdown-toggle text-align-left btn-lg col-md-4
-              type="button"
-              data-toggle="dropdown"
-            >
-              LG &nbsp; &nbsp; <span class="caret"></span>
-
-            </button>
-            <ul class="dropdown-menu">
-              <li><a href="#">HTML</a></li>
-              <li><a href="#">CSS</a></li>
-              <li><a href="#">JavaScript</a></li>
-            </ul>
-            
-        </div>
-
-           <div class="dropdown " style="width: 33%;" >
-            <button
-              style="background-color: white;  text-align: left; width: 98%;"
-              class="btn dropdown-toggle text-align-left btn-lg col-md-4
-              type="button"
-              data-toggle="dropdown"
-            >
-              Town Name &nbsp; &nbsp; <span class="caret"></span>
-
-            </button>
-            <ul class="dropdown-menu">
-              <li><a href="#">HTML</a></li>
-              <li><a href="#">CSS</a></li>
-              <li><a href="#">JavaScript</a></li>
-            </ul>
-            
-        </div>
+            <tr>
+              <td>2</td>
+              <td> </td>
+              <td colspan="2"> </td>
+              <td colspan="2"> </td>
+              <td colspan="3"> </td>
+              <td> </td>
+              <td> </td>
+              <!-- ----Timeline------->
+              <td> </td>
+              <td> </td>
+              <td> </td>
+              <td> </td>
+              <td> </td>
+              <td> </td>
+              <td> </td>
+              <td> </td>
+              <td> </td>
+              <td> </td>
+              <td> </td>
+              <td> </td>
+              <td> </td>
+              <td> </td>
+              <!------Timeline End------->
+              <td> </td>
+              <td colspan="2"> </td>
+              <td colspan="2"> </td>
+              <td> </td>
+            </tr>
 
 
-        </div>
+            <tr>
+              <td>3</td>
+              <td> </td>
+              <td colspan="2"> </td>
+              <td colspan="2"> </td>
+              <td colspan="3"> </td>
+              <td> </td>
+              <td> </td>
+              <!-- ----Timeline------->
+              <td> </td>
+              <td> </td>
+              <td> </td>
+              <td> </td>
+              <td> </td>
+              <td> </td>
+              <td> </td>
+              <td> </td>
+              <td> </td>
+              <td> </td>
+              <td> </td>
+              <td> </td>
+              <td> </td>
+              <td> </td>
+              <!------Timeline End------->
+              <td> </td>
+              <td colspan="2"> </td>
+              <td colspan="2"> </td>
+              <td> </td>
+            </tr>
 
-        <!-- ---------------  -->
-        <div class="row"  style=" display: flex; margin-top: 30px; ">
-            <div class="form-group col-md-4">
-              <input type="text" placeholder="longitude" class="form-control input-lg" required />
-            </div>
-            <div class="form-group col-md-4">
-              <input type="text" placeholder="latitude" class="form-control input-lg" required />
-            </div>
+
+            <tr>
+              <td>4</td>
+              <td> </td>
+              <td colspan="2"> </td>
+              <td colspan="2"> </td>
+              <td colspan="3"> </td>
+              <td> </td>
+              <td> </td>
+              <!-- ----Timeline------->
+              <td> </td>
+              <td> </td>
+              <td> </td>
+              <td> </td>
+              <td> </td>
+              <td> </td>
+              <td> </td>
+              <td> </td>
+              <td> </td>
+              <td> </td>
+              <td> </td>
+              <td> </td>
+              <td> </td>
+              <td> </td>
+              <!------Timeline End------->
+              <td> </td>
+              <td colspan="2"> </td>
+              <td colspan="2"> </td>
+              <td> </td>
+            </tr>
+
+            <tr>
+              <td>5</td>
+              <td> </td>
+              <td colspan="2"> </td>
+              <td colspan="2"> </td>
+              <td colspan="3"> </td>
+              <td> </td>
+              <td> </td>
+              <!-- ----Timeline------->
+              <td> </td>
+              <td> </td>
+              <td> </td>
+              <td> </td>
+              <td> </td>
+              <td> </td>
+              <td> </td>
+              <td> </td>
+              <td> </td>
+              <td> </td>
+              <td> </td>
+              <td> </td>
+              <td> </td>
+              <td> </td>
+              <!------Timeline End------->
+              <td> </td>
+              <td colspan="2"> </td>
+              <td colspan="2"> </td>
+              <td> </td>
+            </tr>
+
+
        
-        </div>
+          </tbody>
+        <!--------------------- TABLE BODY ------------------->
 
+      </table>
+      <!--------------------------------- TABLE FINISHED ---------------------------->
 
-        </div>
-        <!-- -------Name of Town Visited:-------- -->
+      <br/>
+      <br/>
 
-        
-        <!-- ---------------------PROGRAMS-------------  -->
-        <div style=" margin-top: 30px;">
-            <h4>  <strong>Program</strong></h4>
-              
-            <!-- --------------- project Name, DATES ROW -------------  -->
-            <div class="row"  style=" display: flex;"">
-                  <div class="form-group col-md-4">
-                    <label for="usr">Project Name: *</label>
-                    <input type="text" placeholder="Name" class="form-control input-lg" required />
-                  </div>
+      <!-- -------------------------- Action Buttons ------------------  -->
+      <div style="display:flex; gap: 10px; align-items: flex-end; justify-content: flex-end; width: 95%; margin:auto">
+          <button
+            style="background-color: #053775;  text-align: center; color: #fff;"
+            class="btn btn-lg  col-md-1
+            type="button"
+          >
+            Download
+          </button>
 
+          <button
+            style="background-color: #053775;  text-align: center; color: #fff;"
+            class="btn btn-lg  col-md-1
+            type="button"
+          >
+            Export
+          </button>
 
-                  <div  class="md-form md-outline input-with-post-icon datepicker col-md-4" inline="true">
-                    <label for="usr">Date of Visit to Town/Municipality | From
-                      : </label>
-                    <input placeholder="Select date" type="date" id="example" class="form-control input-lg">
-                    <i class="fas fa-calendar input-prefix"></i>
-                  </div>
-
-
-
-                  <div  class="md-form md-outline input-with-post-icon datepicker col-md-4" inline="true">
-                    <label for="usr">Date of Visit to Town/Municipality | To
-                      : </label>
-                    <input placeholder="Select date" type="date" id="example" class="form-control input-lg">
-                    <i class="fas fa-calendar input-prefix"></i>
-                  </div>
-            </div>
-            <!-- --------------- project Name, DATES ROW end -------------  -->
-
-
-            <!-- --------------- COMMENT SECTION  -------------  -->
-            <div class="row" style="display: flex;">
-              <div class="form-group col-md-12">
-                <label for="comment">Project Status before Visit:</label>
-                <textarea class="form-control col-md-12" placeholder="Initial Status" rows="5" id="comment"></textarea>
-              </div>
-            </div>
-            <!-- --------------- COMMENT SECTION END -------------  -->
-
-            <!-- ---------------- THREE INPUT FIELD ROW -------------  -->
-            <div class="row"  style="display: flex; margin-top: 30px;">
-                <div class="form-group col-md-4">
-                  <label for="usr">Person/Authority Met | Position :</label>
-                  <input type="text" placeholder="Full Name" class="form-control input-lg" required />
-                </div>
-                <div class="form-group col-md-4">
-                  <label for="pwd">Email address  *</label>
-                  <input type="text" placeholder="Email" class="form-control input-lg" required />
-                </div>
-                <div class="form-group col-md-4">
-                  <label for="pwd">Contact no  *</label>
-                  <input type="text" placeholder="Phone No." class="form-control input-lg" required />
-                </div>
-            </div>
-            <!-- ---------------- THREE INPUT FIELD ROW FINISHED-------------  -->
-
-
-            <!-- --------------------- Appendable Fields -----------------------  -->
-           
-            <!-- ------field One-------  -->
-            <div class="row" style="display: flex; margin-top: 30px;">
-              <div class="col-md-12">
-                <label for="usr">Activities Performed:</label>
-                <div class="form-group col-md-12"  style="display: flex;">
-                  <input type="text" placeholder="Activities" class="form-control input-lg" required />
-                  <button class="btn">  
-                    <span>
-                      <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M21.875 10.1562H14.8438V3.125C14.8438 2.26221 14.144 1.5625 13.2812 1.5625H11.7188C10.856 1.5625 10.1562 2.26221 10.1562 3.125V10.1562H3.125C2.26221 10.1562 1.5625 10.856 1.5625 11.7188V13.2812C1.5625 14.144 2.26221 14.8438 3.125 14.8438H10.1562V21.875C10.1562 22.7378 10.856 23.4375 11.7188 23.4375H13.2812C14.144 23.4375 14.8438 22.7378 14.8438 21.875V14.8438H21.875C22.7378 14.8438 23.4375 14.144 23.4375 13.2812V11.7188C23.4375 10.856 22.7378 10.1562 21.875 10.1562Z" fill="#0077B6"/>
-                    </svg>
-                    </span>
-                  </button>
-                </div>
-              </div>
-            </div>
-
-            <!-- ------field two-------  -->
-            <div class="row" style="display: flex; margin-top: 30px;">
-              <div class="col-md-12">
-                <label for="Purpose/Objective of Visit:">Purpose/Objective of Visit:</label>
-                <div class="form-group col-md-12"  style="display: flex;">
-                  <input type="text" placeholder="Objective of Visit" class="form-control input-lg" required />
-                  <button class="btn">  
-                    <span>
-                      <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M21.875 10.1562H14.8438V3.125C14.8438 2.26221 14.144 1.5625 13.2812 1.5625H11.7188C10.856 1.5625 10.1562 2.26221 10.1562 3.125V10.1562H3.125C2.26221 10.1562 1.5625 10.856 1.5625 11.7188V13.2812C1.5625 14.144 2.26221 14.8438 3.125 14.8438H10.1562V21.875C10.1562 22.7378 10.856 23.4375 11.7188 23.4375H13.2812C14.144 23.4375 14.8438 22.7378 14.8438 21.875V14.8438H21.875C22.7378 14.8438 23.4375 14.144 23.4375 13.2812V11.7188C23.4375 10.856 22.7378 10.1562 21.875 10.1562Z" fill="#0077B6"/>
-                    </svg>
-                    </span>
-                  </button>
-                </div>
-              </div>
-            </div>
-
-
-            <!-- ------field three-------  -->
-            <div class="row" style="display: flex; margin-top: 30px;">
-            <div class="col-md-12">
-              <label for="Purpose/Objective of Visit:">General Observations/Findings:</label>
-              <div class="form-group col-md-12"  style="display: flex;">
-                <input type="text" placeholder=" Observations" class="form-control input-lg" required />
-                <button class="btn">  
-                  <span>
-                    <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M21.875 10.1562H14.8438V3.125C14.8438 2.26221 14.144 1.5625 13.2812 1.5625H11.7188C10.856 1.5625 10.1562 2.26221 10.1562 3.125V10.1562H3.125C2.26221 10.1562 1.5625 10.856 1.5625 11.7188V13.2812C1.5625 14.144 2.26221 14.8438 3.125 14.8438H10.1562V21.875C10.1562 22.7378 10.856 23.4375 11.7188 23.4375H13.2812C14.144 23.4375 14.8438 22.7378 14.8438 21.875V14.8438H21.875C22.7378 14.8438 23.4375 14.144 23.4375 13.2812V11.7188C23.4375 10.856 22.7378 10.1562 21.875 10.1562Z" fill="#0077B6"/>
-                  </svg>
-                  </span>
-                </button>
-              </div>
-            </div>
-            </div>
-
-              <!-- ------field four-------  -->
-            <div class="row" style="display: flex; margin-top: 30px;">
-              <div class="col-md-12">
-                <label for="Purpose/Objective of Visit:">General Observations/Findings:</label>
-                <div class="form-group col-md-12"  style="display: flex;">
-                  <input type="text" placeholder=" Observations" class="form-control input-lg" required />
-                  <button class="btn">  
-                    <span>
-                      <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M21.875 10.1562H14.8438V3.125C14.8438 2.26221 14.144 1.5625 13.2812 1.5625H11.7188C10.856 1.5625 10.1562 2.26221 10.1562 3.125V10.1562H3.125C2.26221 10.1562 1.5625 10.856 1.5625 11.7188V13.2812C1.5625 14.144 2.26221 14.8438 3.125 14.8438H10.1562V21.875C10.1562 22.7378 10.856 23.4375 11.7188 23.4375H13.2812C14.144 23.4375 14.8438 22.7378 14.8438 21.875V14.8438H21.875C22.7378 14.8438 23.4375 14.144 23.4375 13.2812V11.7188C23.4375 10.856 22.7378 10.1562 21.875 10.1562Z" fill="#0077B6"/>
-                    </svg>
-                    </span>
-                  </button>
-                </div>
-              </div>
-            </div>
-
-
-              <!-- ------field five-------  -->
-              <div class="row" style="display: flex; margin-top: 30px;">
-                <div class="col-md-12">
-                  <label for="Purpose/Objective of Visit:">Recommendations:</label>
-                  <div class="form-group col-md-12"  style="display: flex;">
-                    <input type="text" placeholder="Recommendations " class="form-control input-lg" required />
-                    <button class="btn">  
-                      <span>
-                        <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M21.875 10.1562H14.8438V3.125C14.8438 2.26221 14.144 1.5625 13.2812 1.5625H11.7188C10.856 1.5625 10.1562 2.26221 10.1562 3.125V10.1562H3.125C2.26221 10.1562 1.5625 10.856 1.5625 11.7188V13.2812C1.5625 14.144 2.26221 14.8438 3.125 14.8438H10.1562V21.875C10.1562 22.7378 10.856 23.4375 11.7188 23.4375H13.2812C14.144 23.4375 14.8438 22.7378 14.8438 21.875V14.8438H21.875C22.7378 14.8438 23.4375 14.144 23.4375 13.2812V11.7188C23.4375 10.856 22.7378 10.1562 21.875 10.1562Z" fill="#0077B6"/>
-                      </svg>
-                      </span>
-                    </button>
-                  </div>
-                </div>
-              </div>
-
-
-               <!-- ------field six LAST APPENDABLE FIELDS ROW-------  -->
-               <div class="row" style="display: flex; margin-top: 30px;">
-                <div class="col-md-6">
-                  <label for="Purpose/Objective of Visit:">Recommendations:</label>
-                  <div class="form-group"  style="display: flex;">
-                    <input type="text" placeholder="Recommendations " class="form-control input-lg" required />
-                    <button class="btn">  
-                      <span>
-                        <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M21.875 10.1562H14.8438V3.125C14.8438 2.26221 14.144 1.5625 13.2812 1.5625H11.7188C10.856 1.5625 10.1562 2.26221 10.1562 3.125V10.1562H3.125C2.26221 10.1562 1.5625 10.856 1.5625 11.7188V13.2812C1.5625 14.144 2.26221 14.8438 3.125 14.8438H10.1562V21.875C10.1562 22.7378 10.856 23.4375 11.7188 23.4375H13.2812C14.144 23.4375 14.8438 22.7378 14.8438 21.875V14.8438H21.875C22.7378 14.8438 23.4375 14.144 23.4375 13.2812V11.7188C23.4375 10.856 22.7378 10.1562 21.875 10.1562Z" fill="#0077B6"/>
-                      </svg>
-                      </span>
-                    </button>
-                  </div>
-                </div>
-
-                <div class="form-group col-md-4">
-                  <label for="usr">Progress in percentage</label>
-                  <input type="text" placeholder="Progress %" class="form-control input-lg" required />
-                </div>
-
-              </div>
-            <!-- --------------------- Appendable Fields Finished-----------------------  -->
-                
-
-            <!-- ------------------- DOCUMENTS UPLOAD --------------  -->
-            <div style=" margin-top: 30px;">
-            <h4><strong>Documents Upload</strong></h4>
-        
-                <div class="row"  style=" display: flex; margin: auto;">
-                    <div class="form-group col-md-3">
-                      <div class="input-group-prepend">
-                      <strong> <span class="input-group-text">कार्यक्रमको अनुगमन तथा मूल्याङ्कन</span></strong>
-                      </div>
-                      <div class="custom-file" style="border: 2px solid black; padding:20px; background-color: #fff; border-radius:10px;">
-                        <input type="file" class="custom-file-input" id="inputGroupFile01"
-                          aria-describedby="inputGroupFileAddon01">
-                          <br>
-                        <label class="custom-file-label" for="inputGroupFile01">PNG, JPG, PDF up to 2MB</label>
-                      </div>
-                    </div>
-
-                    <div class="form-group col-md-3">
-                        <div class="input-group-prepend">
-                        <strong> <span class="input-group-text">कार्यपालिका बैठकको निर्णय र मिति</s></strong>
-                        </div>
-                        <div class="custom-file" style="border: 2px solid black; padding:20px; background-color: #fff; border-radius:10px;">
-                          <input type="file" class="custom-file-input" id="inputGroupFile01"
-                            aria-describedby="inputGroupFileAddon01">
-                            <br>
-                          <label class="custom-file-label" for="inputGroupFile01">PNG, JPG, PDF up to 2MB</label>
-                        </div>
-                    </div>
-
-                    <div class="form-group col-md-3">
-                      <div class="input-group-prepend">
-                      <strong> <span class="input-group-text">कार्यक्रमको अनुगमन तथा मूल्याङ्कन</span></strong>
-                      </div>
-                      <div class="custom-file" style="border: 2px solid black; padding:20px; background-color: #fff; border-radius:10px;">
-                        <input type="file" class="custom-file-input" id="inputGroupFile01"
-                          aria-describedby="inputGroupFileAddon01">
-                          <br>
-                        <label class="custom-file-label" for="inputGroupFile01">PNG, JPG, PDF up to 2MB</label>
-                      </div>
-                    </div>
-
-                    <div class="form-group col-md-3">
-                      <div class="input-group-prepend">
-                      <strong> <span class="input-group-text">कार्यक्रमको अनुगमन तथा मूल्याङ्कन</span></strong>
-                      </div>
-                      <div class="custom-file" style="border: 2px solid black; padding:20px; background-color: #fff; border-radius:10px;">
-                        <input type="file" class="custom-file-input" id="inputGroupFile01"
-                          aria-describedby="inputGroupFileAddon01">
-                          <br>
-                        <label class="custom-file-label" for="inputGroupFile01">PNG, JPG, PDF up to 2MB</label>
-                      </div>
-                    </div>
-
-                </div>
-
-            </div>
-           
-            <div style="width: 100%; display: flex; justify-content: flex-end; margin-bottom: 20px;">
-              <button type="button" class="btn btn-primary">
-                Add new document
-              </button>
-            </div>
-
-            <!-- --------DOCUMENTS UPLOAD FINISHED-------  -->
-
-
-            <!-- ----------- SUBMIT BUTTONS -------------  -->
-            <div style="width: 100%; display: flex; justify-content: flex-end">
-              <button type="button" class="btn btn-primary">
-                Save
-              </button>
-              &nbsp;&nbsp;
-              <button type="button" class="btn btn-primary">
-                Save and submit
-              </button>
-            </div>
-          
-            <!-- ----------- SUBMIT BUTTONS FINISHED -------------  -->
-            
-        </div>
       </div>
 
-      <!-- ------------ COPYRIGHT FOOTER ----------  -->
-      <div class="footer col-md-12" style="height:10vh; display: flex;justify-content: center; align-items: center;">
-        <div class="card-footer text-muted">
-          © 2022 All rights reserved. Town Development Fund (TDF) Email : info@tdf.org.np
-        </div>
+      <br/>
+      <br/>
+      <!-- ------------------------- Copyright Footer ------------------  -->
+      <div style=" color: black; display: flex; align-items: center; justify-content: center;">
+        <p>
+        <strong> © 2022 All rights reserved. Town Development Fund (TDF) Email : info@tdf.org.np </strong>
+        </p>
       </div>
 
+      
     </div>
     <script
       src="https://code.jquery.com/jquery-1.12.4.min.js"
