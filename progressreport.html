@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- Latest compiled and minified CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css"
+      integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu"
+      crossorigin="anonymous"
+    />
+
+    <!-- Optional theme -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap-theme.min.css"
+      integrity="sha384-6pzBo3FDv/PJ8r2KRkGHifhEocL+1X2rVCTTkUfGk7/0pbek5mMa1upzvWbrUbOZ"
+      crossorigin="anonymous"
+    />
+  </head>
+  <style>
+    td{
+      background-color: #fff;
+    }
+  </style>
+  <body>
+    <br/>
+    <div  style="background: #EDEFF2; padding-bottom: 30px; width: fit-content; margin: auto;">
+      <br />
+      <br />
+      <!-- ----------- TOP BAR FILTER'S --------------  -->
+      <div class="topbar" style="background: #EDEFF2;display: flex; align-items: center; justify-content: space-evenly">
+        <!-- ----------- search Bar ---------- -->
+      <div class="input-group" style="  display: flex; gap: 5px">
+        <div class="form-outline">
+          <input
+            type="search"
+            placeholder="Search..."
+            id="form1"
+            class="form-control input-lg"
+          />
+        </div>
+        <button type="button" class="btn btn-lg" style="background-color: #053775; color:#fff;">
+          <i class="fas fa-search">Search</i>
+        </button>
+      </div>
+
+      <!-- ---------Filters-- ---------- -->
+        <div class="dropdown " style=" background: #053775;  border-radius: 8px; color: #fff;" >
+          <button
+            style="background-color: transparent; text-align: left; width: 98%; color: #fff;"
+            class="btn dropdown-toggle btn-lg text-align-left col-md-4
+            type="button"
+            data-toggle="dropdown"
+          >
+            Filters &nbsp; &nbsp; <span class="caret"></span>
+          </button>
+          <ul class="dropdown-menu">
+            <li><a href="#">By ... </a></li>
+            <li><a href="#">By ...</a></li>
+            <li><a href="#">By ...</a></li>
+          </ul>
+        </div>
+
+      <!-- ----------- Program DropDown---------- -->
+      <div class="dropdown " style=" background: #053775; border-radius: 8px; color: #fff;" >
+        <button
+          style="background-color: transparent;  text-align: left; color: #fff; width: 98%;"
+          class="btn dropdown-toggle btn-lg text-align-left col-md-4
+          type="button"
+          data-toggle="dropdown"
+        >
+          Programs &nbsp; &nbsp; <span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu">
+          <li><a href="#">Program 1</a></li>
+          <li><a href="#">Program 2</a></li>
+          <li><a href="#">Program 3</a></li>
+        </ul>
+      </div>
+
+      <!-- ----------- Province ---------- -->
+      <div class="dropdown " style=" background: #053775; border-radius: 8px; color: #fff;" >
+        <button
+          style="background-color: transparent;  text-align: left; width: 98%; color: #fff;"
+          class="btn dropdown-toggle btn-lg text-align-left col-md-4
+          type="button"
+          data-toggle="dropdown"
+        >
+          Province &nbsp; &nbsp; <span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu">
+          <li><a href="#">Province 1</a></li>
+          <li><a href="#">Province 2</a></li>
+          <li><a href="#">Bagmati Province</a></li>
+        </ul>
+      </div>
+
+      <!-- ----------- FISCAL YEAR---------- -->
+      <div class="dropdown " style=" background: #053775; border-radius: 8px; color: #fff;" >
+        <button
+          style="background-color: transparent;  text-align: left; width: 98%; color: #fff;"
+          class="btn dropdown-toggle btn-lg text-align-left col-md-4
+          type="button"
+          data-toggle="dropdown"
+        >
+          Fiscal Year &nbsp; &nbsp; <span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu">
+          <li><a href="#">2078</a></li>
+          <li><a href="#">2077</a></li>
+          <li><a href="#">2076</a></li>
+        </ul>
+      </div>
+
+      </div>
+      <!-- ----------- TOP BAR FINISHED--------------  -->
+
+      <br/>
+      <br/>
+      <!-- --------------------- TABLE ------------------->
+      <table border="1"  class="table" style="text-align: center; width: 95%; margin:auto">
+
+        <!-- --------------- TABLE HEADINGS --------------->
+        <tr style=" border-color: #fff; background-color: #053775; color: #fff;">
+          <th rowspan="3">SN</th>
+          <th rowspan="3">Project Name</th>
+          <th colspan="4">Project status as of the end of FY 2077/78</th>
+          <th colspan="3"rowspan="3">Approved Budget FY 2078/79</th>
+          <th rowspan="3">Main Activities (Total: target of this year)</th>
+          <th rowspan="3">Performance Indicators</th>
+          <th rowspan="3">Progress</th>
+          <th colspan="4">PME review</th>
+          <th colspan="4">Responsibility</th>
+          <th rowspan="4">Remarks</th>
+        </tr>
+
+        <tr style=" border-color: #fff; background-color: #053775; color: #fff;">
+          <th colspan="2" rowspan="2">Physical</th>
+          <th colspan="2" rowspan="2">Financial</th>
+          <th colspan="2" rowspan="2">Target achived</th>
+          <th colspan="2" rowspan="2">Target not achived</th>
+          <th colspan="2" rowspan="2">Main Responsibility</th>
+          <th colspan="2" rowspan="2">Supportive Responsibility</th>
+        </tr>
+
+
+
+
+        <!-- ---------------------------- TABLE BODY -----------------  -->
+          <tbody style="border-color: #053775;">
+            <tr>
+              <td>1</td>
+              <td>Commercial Complex and Local Product Center</td>
+              <td colspan="2">67%</td>
+              <td  colspan="2">87%</td>
+              <td  colspan="3">290000000</td>
+              <td>Request for 1st Installment received and account opened</td>
+              <td>Comments on Feasibility Report send to Client</td>
+              <td>67%</td>
+              <td  colspan="2">Achived</td>
+              <td  colspan="2">-</td>
+              <td  colspan="2">Mr. Lorem</td>
+              <td  colspan="2">Mr. Ipsum</td>
+              <td>Other financial, economic, and social benefits of projects:</td>
+            </tr>
+            
+
+            <tr>
+              <td>2</td>
+              <td> </td>
+              <td colspan="2"> </td>
+              <td colspan="2"> </td>
+              <td colspan="3"> </td>
+              <td> </td>
+              <td> </td>
+              <td> </td>
+              <td colspan="2"> </td>
+              <td colspan="2"> </td>
+              <td colspan="2"> </td>
+              <td colspan="2"> </td>
+              <td> </td>
+            </tr>
+
+
+            <tr>
+              <td>3</td>
+              <td> </td>
+              <td colspan="2"> </td>
+              <td colspan="2"> </td>
+              <td colspan="3"> </td>
+              <td> </td>
+              <td> </td>
+              <td> </td>
+              <td colspan="2"> </td>
+              <td colspan="2"> </td>
+              <td colspan="2"> </td>
+              <td colspan="2"> </td>
+              <td> </td>
+            </tr>
+
+
+            <tr>
+              <td>4</td>
+              <td> </td>
+              <td colspan="2"> </td>
+              <td colspan="2"> </td>
+              <td colspan="3"> </td>
+              <td> </td>
+              <td> </td>
+              <td> </td>
+              <td colspan="2"> </td>
+              <td colspan="2"> </td>
+              <td colspan="2"> </td>
+              <td colspan="2"> </td>
+              <td> </td>
+            </tr>
+
+            <tr>
+              <td>5</td>
+              <td> </td>
+              <td colspan="2"> </td>
+              <td colspan="2"> </td>
+              <td colspan="3"> </td>
+              <td> </td>
+              <td> </td>
+              <td> </td>
+              <td colspan="2"> </td>
+              <td colspan="2"> </td>
+              <td colspan="2"> </td>
+              <td colspan="2"> </td>
+              <td> </td>
+            </tr>
+
+
+       
+          </tbody>
+        <!--------------------- TABLE BODY ------------------->
+
+      </table>
+      <!--------------------------------- TABLE FINISHED ---------------------------->
+
+      <br/>
+      <br/>
+
+      <!-- -------------------------- Action Buttons ------------------  -->
+      <div style="display:flex; gap: 10px; align-items: flex-end; justify-content: flex-end; width: 95%; margin:auto">
+          <button
+            style="background-color: #053775;  text-align: center; color: #fff;"
+            class="btn btn-lg  col-md-1
+            type="button"
+          >
+            Download
+          </button>
+
+          <button
+            style="background-color: #053775;  text-align: center; color: #fff;"
+            class="btn btn-lg  col-md-1
+            type="button"
+          >
+            Export
+          </button>
+
+      </div>
+
+      <br/>
+      <br/>
+      <!-- ------------------------- Copyright Footer ------------------  -->
+      <div style=" color: black; display: flex; align-items: center; justify-content: center;">
+        <p>
+        <strong> © 2022 All rights reserved. Town Development Fund (TDF) Email : info@tdf.org.np </strong>
+        </p>
+      </div>
+
+      
+    </div>
+    <script
+      src="https://code.jquery.com/jquery-1.12.4.min.js"
+      integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/js/bootstrap.min.js"
+      integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
